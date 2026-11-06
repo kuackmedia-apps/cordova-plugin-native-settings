@@ -3,9 +3,9 @@
 Fork de [BradyNadeau/cordova-plugin-native-settings](https://github.com/BradyNadeau/cordova-plugin-native-settings) en la versión `1.0.0` publicada en npm (MIT, ver `LICENSE`). Lo usan las apps Cordova de
 Kuack Media para abrir los ajustes de Bluetooth del sistema desde el menú de Cast (`chromecast/ChromecastSession.js`).
 
-Base: `515e482` (upstream no tiene tag de esa versión), idéntico al paquete `cordova-plugin-native-settings@1.0.0` de npm que las apps instalaban hasta noviembre de 2026.
+Base: `515e482` (upstream no tiene tag de esa versión). El paquete `cordova-plugin-native-settings@1.0.0` de npm, que las apps instalaban hasta noviembre de 2026, no salió de ningún commit tal cual (abajo).
 
-El paquete de npm no salió de ningún commit tal cual: tiene finales de línea CRLF, otro README y un `.npmignore`. El código es el de `515e482` salvo los finales de línea. El commit siguiente trae el contenido exacto del paquete, así el build es idéntico al de `cordova-plugin-native-settings@1.0.0` de npm.
+El paquete de npm tiene finales de línea CRLF, otro README y un `.npmignore`; el código es el de `515e482`. El commit siguiente trae el README del paquete, con los archivos en LF como en el repo. Lo que se instala desde este fork es el código del paquete de npm salvo los finales de línea, que no cambian nada al compilar ni al ejecutar (medido el 06/11/2026: los archivos de `platforms/` son iguales quitando los CR).
 
 **Lo publicado es el commit fijado en `_common/configTemplates/config-app*.xml`** del repo de las apps
 (`github:kuackmedia-apps/cordova-plugin-native-settings#<sha>`), no la punta de una branch: un push a este repo no llega a ningún
